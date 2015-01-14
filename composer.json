@@ -20,7 +20,8 @@
     },
     "autoload": {
         "psr-0": {
-            "raffaalves\\BingTranslation": "src/"
+            "Raffaalves\\BingTranslation": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
