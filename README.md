@@ -13,12 +13,12 @@ Install this package through Composer. To your `composer.json` file, add:
 }
 ```
 
+Next, run `composer update` to download it.
+
 or
 ```
 $ composer require raffaalves/bing-translation
 ```
-
-Next, run `composer update` to download it.
 
 Finally, add the service provider to `app/config/app.php`, within the `providers` array.
 
@@ -26,13 +26,13 @@ Finally, add the service provider to `app/config/app.php`, within the `providers
 'providers' => array(
     // ...
 
-    'raffaalves\BingTranslation\BingTranslationServiceProvider'
+    'Raffaalves\BingTranslation\BingTranslationServiceProvider'
 )
 ```
 
 ## Configuration
 
-Run `php artisan config:publish raffaalves/bingtranslation` to publish the package config file. Add your API key and your done.
+Run `php artisan config:publish raffaalves/bing-translation` to publish the package config file. Add your API key and your done.
 
 ## Usage
 
