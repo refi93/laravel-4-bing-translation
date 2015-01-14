@@ -1,7 +1,7 @@
 Laravel-4-Bing-Translation-Library
 ==================================
 
-######Copied from [Laravel 4 Bing Translation Library](https://github.com/Ronster/Laravel-4-Bing-Translation-Library), but with support to Laravel 4.2+
+######Copied from [Laravel 4 Bing Translation Library](https://github.com/sputinyk/laravel-4-bing-translation), but with another autentication
 
 ## Installation
 
@@ -9,7 +9,7 @@ Install this package through Composer. To your `composer.json` file, add:
 
 ```
 "require-dev": {
-	"sputinyk/bing-translation": "dev-master"
+    "raffaalves/bing-translation": "dev-master"
 }
 ```
 
@@ -19,9 +19,9 @@ Finally, add the service provider to `app/config/app.php`, within the `providers
 
 ```
 'providers' => array(
-	// ...
+    // ...
 
-	'Sputinyk\BingTranslation\BingTranslationServiceProvider'
+    'raffaalves\BingTranslation\BingTranslationServiceProvider'
 )
 ```
 
