@@ -13,6 +13,11 @@ Install this package through Composer. To your `composer.json` file, add:
 }
 ```
 
+or
+```
+$ composer require raffaalves/bing-translation
+```
+
 Next, run `composer update` to download it.
 
 Finally, add the service provider to `app/config/app.php`, within the `providers` array.
