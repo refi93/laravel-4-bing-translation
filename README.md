@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Laravel-4-Bing-Translation-Library
 ==================================
 
@@ -39,3 +40,6 @@ $text = 'Hello world!';
 $translatedText = Bing::translate( $text, "en", "nl" );
 dd($translatedText);
 ```
+=======
+# laravel-4-bing-translation
+>>>>>>> 9e3784986b093c356261756f4e199635855342c1
