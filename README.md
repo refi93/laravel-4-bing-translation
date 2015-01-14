@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Laravel-4-Bing-Translation-Library
 ==================================
 
@@ -28,7 +27,7 @@ Finally, add the service provider to `app/config/app.php`, within the `providers
 
 ## Configuration
 
-Run `php artisan config:publish Sputinyk/bingtranslation` to publish the package config file. Add your API key and your done.
+Run `php artisan config:publish raffaalves/bingtranslation` to publish the package config file. Add your API key and your done.
 
 ## Usage
 
@@ -37,9 +36,7 @@ This package is a laravel 4 port of the Microsoft Bing Translation PHP wrapper. 
 ## Example
 ```
 $text = 'Hello world!';
-$translatedText = Bing::translate( $text, "en", "nl" );
+$translatedText = Bing::translate( $text, "en", "fr" );
 dd($translatedText);
 ```
-=======
-# laravel-4-bing-translation
->>>>>>> 9e3784986b093c356261756f4e199635855342c1
+
