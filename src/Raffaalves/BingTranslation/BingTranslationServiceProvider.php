@@ -1,4 +1,5 @@
-<?php namespace Sputinyk\BingTranslation;
+<?php
+namespace Raffaalves\BingTranslation;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\AliasLoader;
@@ -19,7 +20,7 @@ class BingTranslationServiceProvider extends ServiceProvider {
      * @return void
      */
     public function boot() {
-            $this->package('raffaalves/bingtranslation');
+            $this->package('Raffaalves/bingtranslation');
     }
 
     /**
@@ -44,7 +45,7 @@ class BingTranslationServiceProvider extends ServiceProvider {
         // Shortcut so developers don't need to add an Alias in app/config/app.php
         $this->app->booting(function() {
             $loader = AliasLoader::getInstance();
-            $loader->alias('Bing', 'raffaalves\BingTranslation\Facades\Bing');
+            $loader->alias('Bing', 'Raffaalves\BingTranslation\Facades\Bing');
         });
     }
 

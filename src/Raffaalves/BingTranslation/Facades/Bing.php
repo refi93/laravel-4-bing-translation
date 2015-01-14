@@ -1,4 +1,5 @@
-<?php namespace Sputinyk\BingTranslation\Facades;
+<?php
+namespace Raffaalves\BingTranslation\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
