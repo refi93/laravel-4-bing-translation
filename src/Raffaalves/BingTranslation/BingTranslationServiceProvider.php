@@ -29,13 +29,15 @@ class BingTranslationServiceProvider extends ServiceProvider {
      * @return void
      */
     public function register() {
+
         $this->app[ 'bing' ] = $this->app->share(function($app) {
+            $config = (include (app_path().'/config/packages/raffaalves/bing-translation/config.php'));
             require_once( 'lib/BingTranslate.class.php' );
 
-            $clientId = Config::get('bingtranslation::clientId');
-            $clientSecret = Config::get('bingtranslation::clientSecret');
+            $clientId =  $config['clientId'];
+            $clientSecret =  $config['clientSecret'];
 
-            $cacheEnabled = Config::get('bingtranslation::cache_enabled');
+            $cacheEnabled =  $config['cache_enabled'];
 
             $translator = new \BingTranslateWrapper($clientId, $clientSecret);
             $translator->cacheEnabled($cacheEnabled);

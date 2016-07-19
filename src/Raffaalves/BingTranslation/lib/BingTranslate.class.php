@@ -94,7 +94,6 @@ class BingTranslateWrapper
     const DETECT = 1;
     const TRANSLATE = 2;
 
-
     public function __construct($clientId, $clientSecret)
     {
         $this->_clientId = $clientId;
@@ -447,7 +446,7 @@ class BingTranslateWrapper
         return $response;
     }
 
-    public static function getAccessTokenAuthentication() {
+    public function getAccessTokenAuthentication() {
         try {
             // Initialize the Curl Session.
             $ch = curl_init();
