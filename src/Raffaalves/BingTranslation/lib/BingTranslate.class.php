@@ -276,7 +276,7 @@ class BingTranslateWrapper
             {
                 $xmlData = $this->_parse_xml($contents);
 
-                if($xmlData->body->h1 == "Argument Exception") {
+                if($xmlData && $xmlData->body && $xmlData->body->h1 == "Argument Exception") {
                     $this->_reset();
                     $this->_success = false;
                     return false;
